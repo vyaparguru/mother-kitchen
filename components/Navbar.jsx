@@ -26,10 +26,10 @@ export default function Navbar() {
       </div>
 
       <nav className="hidden md:flex space-x-8 text-gray-800 font-medium mx-auto">
-        <a href="#" className="hover:text-gray-900">Home</a>
-        <a href="#" className="hover:text-gray-900">Menu</a>
-        <a href="#" className="hover:text-gray-900">About</a>
-        <a href="#" className="hover:text-gray-900">Contact</a>
+        <a href="/" className="hover:text-gray-900">Home</a>
+        <a href="/menu" className="hover:text-gray-900">Menu</a>
+        <a href="/about" className="hover:text-gray-900">About</a>
+        <a href="/contact" className="hover:text-gray-900">Contact</a>
       </nav>
 
       <button
@@ -51,10 +51,10 @@ export default function Navbar() {
           aria-label="Close menu"
         >
         </button>
-        <a href="#" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Home</a>
-        <a href="#" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Menu</a>
-        <a href="#" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>About</a>
-        <a href="#" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Contact</a>
+        <a href="/" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Home</a>
+        <a href="/menu" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Menu</a>
+        <a href="/about" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>About</a>
+        <a href="/contact" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Contact</a>
       </div>
       {isOpen && (
         <div

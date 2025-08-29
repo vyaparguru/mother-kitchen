@@ -56,7 +56,7 @@ export default function PopularDishesSection() {
               <div className="p-4 text-left">
                 <div className="flex items-center justify-between">
                   <h3 className="text-gray-900 font-semibold text-sm">{dish.title}</h3>
-                  <span className="bg-yellow-400 text-gray-900 px-2 py-1 text-sm font-semibold">
+                  <span className=" text-gray-900 px-2 py-1 text-sm font-semibold">
                     ${dish.price}
                   </span>
                 </div>

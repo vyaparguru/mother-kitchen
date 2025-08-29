@@ -18,7 +18,7 @@ export default function HeroSection() {
   return (
     <div className="relative w-full h-screen flex flex-col overflow-hidden">
       {/* Navbar */}
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* Background Image */}
       <div

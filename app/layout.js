@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={karla.variable}>
       <body>
-        <Navbar/>
+        {/* <Navbar/> */}
         <main>{children}</main>
         <Footer/>
         <ScrollToTop/>
