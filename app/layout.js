@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 import { Karla } from "next/font/google";
 
 const karla = Karla({
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         <main>{children}</main>
         <Footer/>
+        <ScrollToTop/>
       </body>
     </html>
   );
