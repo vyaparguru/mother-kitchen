@@ -12,8 +12,8 @@ export default function Footer() {
                     </div>
 
                     <div className="flex space-x-6 text-gray-700 text-sm font-medium mb-4 md:mb-0">
-                        <a href="#" className="hover:text-gray-900 transition">Privacy Policy</a>
-                        <a href="#" className="hover:text-gray-900 transition">Terms and Conditions</a>
+                        <a href="/privacy-policy" className="hover:text-gray-900 transition">Privacy Policy</a>
+                        <a href="/terms-and-conditions" className="hover:text-gray-900 transition">Terms and Conditions</a>
                     </div>
 
                     <p className="text-sm text-center md:text-right text-gray-700 hover:text-gray-900">
