@@ -17,12 +17,13 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-36 py-4 z-20 shadow transition-all duration-500 ${
-        scrolled ? "bg-white/90 backdrop-blur" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-36 py-2 z-20 shadow transition-all duration-500 ${scrolled ? "bg-white/90 backdrop-blur" : "bg-transparent"
+        }`}
     >
       <div className="flex-shrink-0">
-        <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
+        <a href="/">
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto cursor-pointer" />
+        </a>
       </div>
 
       <nav className="hidden md:flex space-x-8 text-gray-800 font-medium mx-auto">
@@ -41,15 +42,15 @@ export default function Navbar() {
       </button>
 
       <div
-        className={`fixed top-0 right-0 h-full w-2/3 max-w-xs bg-white text-gray-900 shadow-lg flex flex-col items-center py-24 space-y-8 transition-transform duration-300 z-20 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        className={`fixed top-0 right-0 h-screen w-2/3 max-w-xs bg-white text-gray-900 shadow-lg flex flex-col items-center pt-20 pb-6 space-y-8 transition-transform duration-300 z-30 ${isOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden`}
       >
         <button
           className="absolute top-6 right-6 text-gray-800"
           onClick={() => setIsOpen(false)}
           aria-label="Close menu"
         >
+          <FaTimes size={26} />
         </button>
         <a href="/" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Home</a>
         <a href="/menu" className="hover:text-gray-900 text-lg" onClick={() => setIsOpen(false)}>Menu</a>
